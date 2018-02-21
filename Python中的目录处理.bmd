@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document type="BLUMIND" editor_version="3.2.902.24361" document_version="3.0.0.0">
+  <!--Create by Blumind, you can download it free from http://www.blumind.org-->
+  <information>
+    <author>ccds_stx</author>
+    <company>
+    </company>
+    <version>3.0</version>
+    <description>
+    </description>
+  </information>
+  <attributes>
+    <item name="editor_show_sidebar">True</item>
+  </attributes>
+  <charts active_chart="0">
+    <chart name="目录处理" type="MindMap">
+      <remark>
+      </remark>
+      <layout>MIND_MAP</layout>
+      <style>
+        <back_color>White</back_color>
+        <fore_color>Black</fore_color>
+        <line_color>LightSlateGray</line_color>
+        <border_color>SlateGray</border_color>
+        <node_back_color>LightGray</node_back_color>
+        <node_fore_color>Black</node_fore_color>
+        <select_color>RoyalBlue</select_color>
+        <hover_color>MediumSlateBlue</hover_color>
+        <link_line_color>Green</link_line_color>
+        <widget_margin>1</widget_margin>
+        <picture_thumb_size>100, 100</picture_thumb_size>
+      </style>
+      <nodes>
+        <node id="1" text="目录" x="618" y="377" width="71" height="42" text_b="12, 12, 29, 18">
+          <style>
+            <back_color>Silver</back_color>
+            <fore_color>Black</fore_color>
+            <border_color>Black</border_color>
+            <padding>12</padding>
+          </style>
+          <widgets>
+            <widget type="NOTES" x="42" y="13" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+              <text>Python 的目录的操作主要在os module 中，使用前应导入 ：import os</text>
+            </widget>
+          </widgets>
+          <nodes>
+            <node id="9" text="os.path" x="468" y="387" width="70" height="22" text_b="2, 2, 48, 18" fold_btn_b="454, 392, 13, 13">
+              <widgets>
+                <widget type="NOTES" x="51" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                  <text>python中与路径相关的字符串处理函数，含相对路径和绝对路径、拆分文件名中的路径和文件名信息以及路径中字符串处理。</text>
+                </widget>
+              </widgets>
+              <nodes>
+                <node id="10" text="相对路径和绝对路径" x="250" y="259" width="138" height="22" text_b="2, 2, 116, 18" fold_btn_b="236, 264, 13, 13">
+                  <widgets>
+                    <widget type="NOTES" x="119" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                      <text>&lt;OL&gt;
+&lt;LI&gt;“绝对路径”，总是从根文件夹开始。&lt;/LI&gt;
+&lt;LI&gt;“相对路径”，它相对于程序的当前工作目录。&lt;/LI&gt;&lt;/OL&gt;</text>
+                    </widget>
+                  </widgets>
+                  <nodes>
+                    <node id="11" text="os.path.abspath(...)" x="32" y="195" width="138" height="22" text_b="2, 2, 116, 18">
+                      <widgets>
+                        <widget type="NOTES" x="119" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>&lt;P&gt;将相对路径转换位绝对路径&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="12" text="os.path.relpath(...)" x="38" y="227" width="132" height="22" text_b="2, 2, 110, 18">
+                      <widgets>
+                        <widget type="NOTES" x="113" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>转换为相对路径</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="13" text="os.isabs(...)" x="80" y="259" width="90" height="22" text_b="2, 2, 68, 18">
+                      <widgets>
+                        <widget type="NOTES" x="71" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>判断是否是绝对路径</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="15" text="." x="141" y="291" width="29" height="22" text_b="2, 2, 7, 18">
+                      <widgets>
+                        <widget type="NOTES" x="10" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>表示当前路径</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="16" text=".." x="138" y="323" width="32" height="22" text_b="2, 2, 10, 18">
+                      <widgets>
+                        <widget type="NOTES" x="13" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>父文件夹</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="11" begin_side="Left" end_side="Right" begin_rect="237, 259, 151, 22" end_rect="32, 195, 138, 22" />
+                    <line target="12" begin_side="Left" end_side="Right" begin_rect="237, 259, 151, 22" end_rect="38, 227, 132, 22" />
+                    <line target="13" begin_side="Left" end_side="Right" begin_rect="237, 259, 151, 22" end_rect="80, 259, 90, 22" />
+                    <line target="15" begin_side="Left" end_side="Right" begin_rect="237, 259, 151, 22" end_rect="141, 291, 29, 22" />
+                    <line target="16" begin_side="Left" end_side="Right" begin_rect="237, 259, 151, 22" end_rect="138, 323, 32, 22" />
+                  </lines>
+                </node>
+                <node id="14" text="获取文件大小信息" x="281" y="355" width="107" height="22" text_b="2, 2, 103, 18" fold_btn_b="267, 360, 13, 13">
+                  <nodes>
+                    <node id="19" text="os.path.getsize(filename)" x="27" y="355" width="174" height="22" text_b="2, 2, 152, 18">
+                      <widgets>
+                        <widget type="NOTES" x="155" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>返回&amp;nbsp;filename 参数中文件的字节数</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="19" begin_side="Left" end_side="Right" begin_rect="268, 355, 120, 22" end_rect="27, 355, 174, 22" />
+                  </lines>
+                </node>
+                <node id="20" text="处理路径字符串" x="275" y="435" width="113" height="22" text_b="2, 2, 91, 18" fold_btn_b="261, 440, 13, 13">
+                  <widgets>
+                    <widget type="NOTES" x="94" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                      <text>本办法的函数基本上都只管按系统目录分隔符处理字符串，而不考虑传入的路径字符串是否是真实路径。</text>
+                    </widget>
+                  </widgets>
+                  <nodes>
+                    <node id="17" text="os.path.dirname(path)" x="38" y="387" width="157" height="22" text_b="2, 2, 135, 18">
+                      <widgets>
+                        <widget type="NOTES" x="138" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>&lt;P&gt;返回path字符串最后一个斜杠（反斜杠）之前的所有内容。&lt;/P&gt;
+&lt;P&gt;例：&lt;/P&gt;
+&lt;P&gt;&amp;gt;&amp;gt;&amp;gt; os.path.dirname('python3.dll')&lt;BR&gt;''&lt;BR&gt;&amp;gt;&amp;gt;&amp;gt; os.path.dirname('C:\\Python36-32\\python3.dll')&lt;BR&gt;'C:\\Python36-32'&lt;BR&gt;&amp;gt;&amp;gt;&amp;gt; os.path.dirname('C:\\Python36-32\\p.exe')&lt;BR&gt;'C:\\Python36-32'&lt;BR&gt;&amp;gt;&amp;gt;&amp;gt; os.path.dirname('C:\\PP\\dd\\')&lt;BR&gt;'C:\\PP\\dd'&lt;BR&gt;&amp;gt;&amp;gt;&amp;gt; &lt;BR&gt;&lt;/P&gt;</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="18" text="os.path.basename(path)" x="26" y="419" width="169" height="22" text_b="2, 2, 147, 18">
+                      <widgets>
+                        <widget type="NOTES" x="150" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>将传入的字符串的最后一个斜杠（反斜杠）后的内容返回。</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="23" text="os.path.join(path, *paths)" x="20" y="451" width="175" height="22" text_b="2, 2, 153, 18">
+                      <widgets>
+                        <widget type="NOTES" x="156" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>将字符串按顺序连接成一个路径。</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="28" text="os.path.sep" x="101" y="483" width="94" height="22" text_b="2, 2, 72, 18">
+                      <widgets>
+                        <widget type="NOTES" x="75" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>根据操作系统类型自动选择对应的路径分隔符</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="17" begin_side="Left" end_side="Right" begin_rect="262, 435, 126, 22" end_rect="38, 387, 157, 22" />
+                    <line target="18" begin_side="Left" end_side="Right" begin_rect="262, 435, 126, 22" end_rect="26, 419, 169, 22" />
+                    <line target="23" begin_side="Left" end_side="Right" begin_rect="262, 435, 126, 22" end_rect="20, 451, 175, 22" />
+                    <line target="28" begin_side="Left" end_side="Right" begin_rect="262, 435, 126, 22" end_rect="101, 483, 94, 22" />
+                  </lines>
+                </node>
+                <node id="24" text="检查路径有效性" x="293" y="547" width="95" height="22" text_b="2, 2, 91, 18" fold_btn_b="279, 552, 13, 13">
+                  <nodes>
+                    <node id="25" text="os.path.exists(path)" x="72" y="515" width="141" height="22" text_b="2, 2, 119, 18">
+                      <widgets>
+                        <widget type="NOTES" x="122" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>path 参数所指的文件或文件夹是否存在</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="26" text="os.path.isfile(path)" x="78" y="547" width="135" height="22" text_b="2, 2, 113, 18">
+                      <widgets>
+                        <widget type="NOTES" x="116" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>path 参数是否存在，并且是一个文件</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="27" text="os.path.isdir(path)" x="80" y="579" width="133" height="22" text_b="2, 2, 111, 18">
+                      <widgets>
+                        <widget type="NOTES" x="114" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>path 参数是否存在，并且是一个文件夹</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="25" begin_side="Left" end_side="Right" begin_rect="280, 547, 108, 22" end_rect="72, 515, 141, 22" />
+                    <line target="26" begin_side="Left" end_side="Right" begin_rect="280, 547, 108, 22" end_rect="78, 547, 135, 22" />
+                    <line target="27" begin_side="Left" end_side="Right" begin_rect="280, 547, 108, 22" end_rect="80, 579, 133, 22" />
+                  </lines>
+                </node>
+              </nodes>
+              <lines>
+                <line target="10" begin_side="Left" end_side="Right" begin_rect="455, 387, 83, 22" end_rect="250, 259, 138, 22" />
+                <line target="14" begin_side="Left" end_side="Right" begin_rect="455, 387, 83, 22" end_rect="281, 355, 107, 22" />
+                <line target="20" begin_side="Left" end_side="Right" begin_rect="455, 387, 83, 22" end_rect="275, 435, 113, 22" />
+                <line target="24" begin_side="Left" end_side="Right" begin_rect="455, 387, 83, 22" end_rect="293, 547, 95, 22" />
+              </lines>
+            </node>
+            <node id="10" text="基本操作" x="769" y="387" width="58" height="22" text_b="2, 2, 54, 18" fold_btn_b="828, 392, 13, 13">
+              <nodes>
+                <node id="5" text="创建目录" x="907" y="259" width="58" height="22" text_b="2, 2, 54, 18" fold_btn_b="966, 264, 13, 13">
+                  <nodes>
+                    <node id="7" text="os.makedirs()" x="1045" y="243" width="105" height="22" text_b="2, 2, 83, 18">
+                      <widgets>
+                        <widget type="NOTES" x="86" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>以递归的方法创建目录，即如果中间各级目录不存在，则直接创建。</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="8" text="os.mkdir()" x="1045" y="275" width="86" height="22" text_b="2, 2, 64, 18">
+                      <widgets>
+                        <widget type="NOTES" x="67" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>添加目录，要求中间各级目录必须已创建，否则报错。</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="7" begin_side="Right" end_side="Left" begin_rect="907, 259, 71, 22" end_rect="1045, 243, 105, 22" />
+                    <line target="8" begin_side="Right" end_side="Left" begin_rect="907, 259, 71, 22" end_rect="1045, 275, 86, 22" />
+                  </lines>
+                </node>
+                <node id="1" text="修改目录名（或文件名）" x="907" y="307" width="144" height="22" text_b="2, 2, 140, 18" fold_btn_b="1052, 312, 13, 13">
+                  <nodes>
+                    <node id="2" text="os.rename" x="1131" y="307" width="88" height="22" text_b="2, 2, 66, 18">
+                      <widgets>
+                        <widget type="NOTES" x="69" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>rename(src, dst, *, src_dir_fd=None, dst_dir_fd=None) Rename a file or directory. If either src_dir_fd or dst_dir_fd is not None, it should be a file descriptor open to a directory, and the respective path string (src or dst) should be relative; the path will then be relative to that directory. src_dir_fd and dst_dir_fd, may not be implemented on your platform. If they are unavailable, using them will raise a NotImplementedError.</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="2" begin_side="Right" end_side="Left" begin_rect="907, 307, 157, 22" end_rect="1131, 307, 88, 22" />
+                  </lines>
+                </node>
+                <node id="21" text="列目录内容" x="907" y="339" width="70" height="22" text_b="2, 2, 66, 18" fold_btn_b="978, 344, 13, 13">
+                  <nodes>
+                    <node id="22" text="os.listdir(path)" x="1057" y="339" width="93" height="22" text_b="2, 2, 89, 18" />
+                  </nodes>
+                  <lines>
+                    <line target="22" begin_side="Right" end_side="Left" begin_rect="907, 339, 83, 22" end_rect="1057, 339, 93, 22" />
+                  </lines>
+                </node>
+                <node id="2" text="当前目录" x="907" y="387" width="58" height="22" text_b="2, 2, 54, 18" fold_btn_b="966, 392, 13, 13">
+                  <nodes>
+                    <node id="1" text="获取当前目录" x="1045" y="371" width="83" height="22" text_b="2, 2, 79, 18" fold_btn_b="1129, 376, 13, 13">
+                      <nodes>
+                        <node id="3" text="os.getcwd()" x="1208" y="371" width="95" height="22" text_b="2, 2, 73, 18">
+                          <widgets>
+                            <widget type="NOTES" x="76" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                              <text>&lt;P&gt;获得当前目录&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;</text>
+                            </widget>
+                          </widgets>
+                        </node>
+                      </nodes>
+                      <lines>
+                        <line target="3" begin_side="Right" end_side="Left" begin_rect="1045, 371, 96, 22" end_rect="1208, 371, 95, 22" />
+                      </lines>
+                    </node>
+                    <node id="2" text="改变当前目录" x="1045" y="403" width="83" height="22" text_b="2, 2, 79, 18" fold_btn_b="1129, 408, 13, 13">
+                      <nodes>
+                        <node id="4" text="os.chdir()" x="1208" y="403" width="81" height="22" text_b="2, 2, 59, 18">
+                          <widgets>
+                            <widget type="NOTES" x="62" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                              <text>改变当前目录</text>
+                            </widget>
+                          </widgets>
+                        </node>
+                      </nodes>
+                      <lines>
+                        <line target="4" begin_side="Right" end_side="Left" begin_rect="1045, 403, 96, 22" end_rect="1208, 403, 81, 22" />
+                      </lines>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="1" begin_side="Right" end_side="Left" begin_rect="907, 387, 71, 22" end_rect="1045, 371, 83, 22" />
+                    <line target="2" begin_side="Right" end_side="Left" begin_rect="907, 387, 71, 22" end_rect="1045, 403, 83, 22" />
+                  </lines>
+                </node>
+                <node id="5" text="移动目录" x="907" y="435" width="58" height="22" text_b="2, 2, 54, 18" fold_btn_b="966, 440, 13, 13">
+                  <nodes>
+                    <node id="6" text="shutil.move" x="1045" y="435" width="95" height="22" text_b="2, 2, 73, 18">
+                      <widgets>
+                        <widget type="NOTES" x="76" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>move(src, dst, copy_function=&lt;FUNCTION 0x000001F69F7CE510 at copy2&gt;) Recursively move a file or directory to another location. This is similar to the Unix "mv" command. Return the file or directory's destination. If the destination is a directory or a symlink to a directory, the source is moved inside the directory. The destination path must not already exist. If the destination already exists but is not a directory, it may be overwritten depending on os.rename() semantics. If the destination is on our current filesystem, then rename() is used. Otherwise, src is copied to the destination and then removed. Symlinks are recreated under the new name if os.rename() fails because of cross filesystem renames. The optional `copy_function` argument is a callable that will be used to copy the source or it will be delegated to `copytree`. By default, copy2() is used, but any function that supports the same signature (like copy()) can be used. A lot more could be done here... A look at a mv.c shows a lot of the issues this implementation glosses over.</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="6" begin_side="Right" end_side="Left" begin_rect="907, 435, 71, 22" end_rect="1045, 435, 95, 22" />
+                  </lines>
+                </node>
+                <node id="3" text="复制目录" x="907" y="467" width="58" height="22" text_b="2, 2, 54, 18" fold_btn_b="966, 472, 13, 13">
+                  <nodes>
+                    <node id="4" text="shutil.copytree" x="1045" y="467" width="113" height="22" text_b="2, 2, 91, 18">
+                      <widgets>
+                        <widget type="NOTES" x="94" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>copytree(src, dst, symlinks=False, ignore=None, copy_function=&lt;FUNCTION 0x000001F69F7CE510 at copy2&gt;, ignore_dangling_symlinks=False) Recursively copy a directory tree. The destination directory must not already exist. If exception(s) occur, an Error is raised with a list of reasons. If the optional symlinks flag is true, symbolic links in the source tree result in symbolic links in the destination tree; if it is false, the contents of the files pointed to by symbolic links are copied. If the file pointed by the symlink doesn't exist, an exception will be added in the list of errors raised in an Error exception at the end of the copy process. You can set the optional ignore_dangling_symlinks flag to true if you want to silence this exception. Notice that this has no effect on platforms that don't support os.symlink. The optional ignore argument is a callable. If given, it is called with the `src` parameter, which is the directory being visited by copytree(), and `names` which is the list of `src` contents, as returned by os.listdir(): callable(src, names) -&amp;gt; ignored_names Since copytree() is called recursively, the callable will be called once for each directory that is copied. It returns a list of names relative to the `src` directory that should not be copied. The optional copy_function argument is a callable that will be used to copy each file. It will be called with the source path and the destination path as arguments. By default, copy2() is used, but any function that supports the same signature (like copy()) can be used.</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="4" begin_side="Right" end_side="Left" begin_rect="907, 467, 71, 22" end_rect="1045, 467, 113, 22" />
+                  </lines>
+                </node>
+                <node id="7" text="删除目录" x="907" y="515" width="58" height="22" text_b="2, 2, 54, 18" fold_btn_b="966, 520, 13, 13">
+                  <nodes>
+                    <node id="8" text="os.rmdir" x="1045" y="499" width="75" height="22" text_b="2, 2, 53, 18">
+                      <widgets>
+                        <widget type="NOTES" x="56" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>rmdir(path, *, dir_fd=None) Remove a directory. If dir_fd is not None, it should be a file descriptor open to a directory, and path should be relative; path will then be relative to that directory. dir_fd may not be implemented on your platform. If it is unavailable, using it will raise a NotImplementedError. </text>
+                        </widget>
+                      </widgets>
+                    </node>
+                    <node id="9" text="shutil.rmtree" x="1045" y="531" width="101" height="22" text_b="2, 2, 79, 18">
+                      <widgets>
+                        <widget type="NOTES" x="82" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                          <text>rmtree(path, ignore_errors=False, onerror=None) Recursively delete a directory tree. If ignore_errors is set, errors are ignored; otherwise, if onerror is set, it is called to handle the error with arguments (func, path, exc_info) where func is platform and implementation dependent; path is the argument to that function that caused it to fail; and exc_info is a tuple returned by sys.exc_info(). If ignore_errors is false and onerror is None, an exception is raised.</text>
+                        </widget>
+                      </widgets>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="8" begin_side="Right" end_side="Left" begin_rect="907, 515, 71, 22" end_rect="1045, 499, 75, 22" />
+                    <line target="9" begin_side="Right" end_side="Left" begin_rect="907, 515, 71, 22" end_rect="1045, 531, 101, 22" />
+                  </lines>
+                </node>
+              </nodes>
+              <lines>
+                <line target="5" begin_side="Right" end_side="Left" begin_rect="769, 387, 71, 22" end_rect="907, 259, 58, 22" />
+                <line target="1" begin_side="Right" end_side="Left" begin_rect="769, 387, 71, 22" end_rect="907, 307, 144, 22" />
+                <line target="21" begin_side="Right" end_side="Left" begin_rect="769, 387, 71, 22" end_rect="907, 339, 70, 22" />
+                <line target="2" begin_side="Right" end_side="Left" begin_rect="769, 387, 71, 22" end_rect="907, 387, 58, 22" />
+                <line target="5" begin_side="Right" end_side="Left" begin_rect="769, 387, 71, 22" end_rect="907, 435, 58, 22" />
+                <line target="3" begin_side="Right" end_side="Left" begin_rect="769, 387, 71, 22" end_rect="907, 467, 58, 22" />
+                <line target="7" begin_side="Right" end_side="Left" begin_rect="769, 387, 71, 22" end_rect="907, 515, 58, 22" />
+              </lines>
+            </node>
+          </nodes>
+          <lines>
+            <line target="9" begin_side="Left" end_side="Right" begin_rect="618, 377, 71, 42" end_rect="468, 387, 70, 22" />
+            <line target="10" begin_side="Right" end_side="Left" begin_rect="618, 377, 71, 42" end_rect="769, 387, 58, 22" />
+          </lines>
+        </node>
+      </nodes>
+    </chart>
+    <chart name="文件处理" type="MindMap">
+      <remark>
+      </remark>
+      <layout>MIND_MAP</layout>
+      <style>
+        <back_color>White</back_color>
+        <fore_color>Black</fore_color>
+        <line_color>LightSlateGray</line_color>
+        <border_color>SlateGray</border_color>
+        <node_back_color>LightGray</node_back_color>
+        <node_fore_color>Black</node_fore_color>
+        <select_color>RoyalBlue</select_color>
+        <hover_color>MediumSlateBlue</hover_color>
+        <link_line_color>Green</link_line_color>
+        <widget_margin>1</widget_margin>
+        <picture_thumb_size>100, 100</picture_thumb_size>
+      </style>
+      <nodes>
+        <node id="1" text="文件" x="577" y="377" width="53" height="42" text_b="12, 12, 29, 18">
+          <style>
+            <back_color>Silver</back_color>
+            <fore_color>Black</fore_color>
+            <border_color>Black</border_color>
+            <padding>12</padding>
+          </style>
+          <nodes>
+            <node id="2" text="拷贝" x="464" y="347" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="450, 352, 13, 13">
+              <nodes>
+                <node id="3" text="shutil.copy" x="294" y="347" width="90" height="22" text_b="2, 2, 68, 18">
+                  <widgets>
+                    <widget type="NOTES" x="71" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                      <text>&lt;P&gt;copy(src, dst, *, follow_symlinks=True) Copy data and mode bits ("cp src dst"). &lt;/P&gt;
+&lt;P&gt;Return the file's destination. The destination may be a directory. &lt;/P&gt;
+&lt;P&gt;If follow_symlinks is false, symlinks won't be followed. This resembles GNU's "cp -P src dst". &lt;/P&gt;
+&lt;P&gt;If source and destination are the same file, a SameFileError will be raised.&lt;/P&gt;</text>
+                    </widget>
+                  </widgets>
+                </node>
+              </nodes>
+              <lines>
+                <line target="3" begin_side="Left" end_side="Right" begin_rect="451, 347, 46, 22" end_rect="294, 347, 90, 22" />
+              </lines>
+            </node>
+            <node id="4" text="移动（重命名）文件" x="377" y="427" width="120" height="22" text_b="2, 2, 116, 18" fold_btn_b="363, 432, 13, 13">
+              <nodes>
+                <node id="5" text="shutil.move" x="202" y="427" width="95" height="22" text_b="2, 2, 73, 18">
+                  <widgets>
+                    <widget type="NOTES" x="76" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                      <text>&lt;P&gt;move(src, dst, copy_function=&lt;FUNCTION 0x0000027C91073620 at copy2&gt;) Recursively move a file or directory to another location. This is similar to the Unix "mv" command. Return the file or directory's destination. &lt;/P&gt;
+&lt;P&gt;If the destination is a directory or a symlink to a directory, the source is moved inside the directory. The destination path must not already exist. &lt;/P&gt;
+&lt;P&gt;If the destination already exists but is not a directory, it may be overwritten depending on os.rename() semantics. &lt;/P&gt;
+&lt;P&gt;If the destination is on our current filesystem, then rename() is used. Otherwise, src is copied to the destination and then removed. Symlinks are recreated under the new name if os.rename() fails because of cross filesystem renames. &lt;/P&gt;
+&lt;P&gt;The optional `copy_function` argument is a callable that will be used to copy the source or it will be delegated to `copytree`. By default, copy2() is used, but any function that supports the same signature (like copy()) can be used. &lt;/P&gt;
+&lt;P&gt;A lot more could be done here... A look at a mv.c shows a lot of the issues this implementation glosses over.&lt;/P&gt;</text>
+                    </widget>
+                  </widgets>
+                </node>
+              </nodes>
+              <lines>
+                <line target="5" begin_side="Left" end_side="Right" begin_rect="364, 427, 133, 22" end_rect="202, 427, 95, 22" />
+              </lines>
+            </node>
+            <node id="6" text="删除" x="710" y="387" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="744, 392, 13, 13">
+              <nodes>
+                <node id="7" text="shutil.unlink" x="823" y="371" width="98" height="22" text_b="2, 2, 76, 18">
+                  <widgets>
+                    <widget type="NOTES" x="79" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                      <text>&lt;P&gt;unlink(path, *, dir_fd=None) Remove a file (same as remove()). &lt;/P&gt;
+&lt;P&gt;If dir_fd is not None, it should be a file descriptor open to a directory, and path should be relative; path will then be relative to that directory. dir_fd may not be implemented on your platform.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;If it is unavailable, using it will raise a NotImplementedError.&lt;/P&gt;</text>
+                    </widget>
+                  </widgets>
+                </node>
+                <node id="8" text="os.remove" x="823" y="403" width="88" height="22" text_b="2, 2, 66, 18">
+                  <widgets>
+                    <widget type="NOTES" x="69" y="3" width="16" height="16" align="Right" hyperlink="" display_index="0" padding="0">
+                      <text>&lt;P&gt;remove(path, *, dir_fd=None)&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;Remove a file (same as unlink()).&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;If dir_fd is not None, it should be a file descriptor open to a directory, and path should be relative; path will then be relative to that directory. dir_fd may not be implemented on your platform. &lt;/P&gt;
+&lt;P&gt;If it is unavailable, using it will raise a NotImplementedError.&lt;/P&gt;</text>
+                    </widget>
+                  </widgets>
+                </node>
+              </nodes>
+              <lines>
+                <line target="7" begin_side="Right" end_side="Left" begin_rect="710, 387, 46, 22" end_rect="823, 371, 98, 22" />
+                <line target="8" begin_side="Right" end_side="Left" begin_rect="710, 387, 46, 22" end_rect="823, 403, 88, 22" />
+              </lines>
+            </node>
+          </nodes>
+          <lines>
+            <line target="2" begin_side="Left" end_side="Right" begin_rect="577, 377, 53, 42" end_rect="464, 347, 33, 22" />
+            <line target="4" begin_side="Left" end_side="Right" begin_rect="577, 377, 53, 42" end_rect="377, 427, 120, 22" />
+            <line target="6" begin_side="Right" end_side="Left" begin_rect="577, 377, 53, 42" end_rect="710, 387, 33, 22" />
+          </lines>
+        </node>
+      </nodes>
+    </chart>
+  </charts>
+</document>
